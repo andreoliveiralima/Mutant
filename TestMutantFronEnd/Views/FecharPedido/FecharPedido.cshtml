@@ -1,0 +1,57 @@
+﻿
+@{
+    ViewData["Title"] = "FecharPedido";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h1>Fechar Pedido</h1>
+<script src="~/js/FecharPedido/fecharpedido.js"></script>
+<div class="container-fluid" style="padding-top:15px">
+    
+    <div class="form-group row " id="" style="padding-right:5px; padding-left:5px; padding-top:0px; ">
+        <div class="col-md-6">
+            <select class="form-control" id="dropPedidosAbertos" name="dropPedidosAbertos" style="margin-top:0px; font-size:small; max-width:100%;">
+                <option value="0" selected>Pedidos Abertos - Selecione um Pedido...</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="form-group row " id="" style="padding-right:5px; padding-left:5px; padding-top:0px; ">
+        <div class="col-md-12" id="divIngredientes"></div>
+    </div>
+
+    <div class="form-group row " id="" style="padding-right:5px; padding-left:5px; padding-top:0px; ">
+        <div class="col-md-2" id="" style="padding-top:5px;">
+            <button id="btnLimpar" class="btn btn-sm btn-dark btn-block" style="height:50px" type="button" onclick="LimparTela();">Limpar Tela</button>
+        </div>
+        <div class="col-md-2" id="" style="padding-top:5px;">
+            <button id="btnAplicarPromocao" class="btn btn-sm btn-warning btn-block" style="height:50px" type="button" onclick="AplicarPromocao();">Aplicar Promoção</button>
+        </div>
+        <div class="col-md-2" id="" style="padding-top:5px;">
+            <button id="btnFecharPedido" class="btn btn-sm btn-info btn-block" style="height:50px" type="button" onclick="FecharPedido();">Fechar Pedido</button>
+        </div>
+    </div>
+
+    <hr />
+
+</div>
+<input type="hidden" id="txtIdPedido" name="txtIdPedido" style="display:none" required />
+
+<script type="text/javascript">
+    vFecharPedido = '@Url.Action("FecharPedidoCliente", "FecharPedido")';
+    vListarPedidosAbertos = '@Url.Action("ListarPedidosAbertos", "Pedido")';
+    vListarItensPedido = '@Url.Action("ListarItensPedido", "FecharPedido")';
+    vAplicarPromocao = '@Url.Action("AplicarPromocao", "FecharPedido")';
+
+    window.onload = function () {
+        $("#btnAplicarPromocao").hide();
+        $("#btnFecharPedido").hide();
+        CarregaDropPedidosAbertos();
+    };
+
+    $("#dropPedidosAbertos").change(function () {
+        CarregaIngredientesLanche();
+    })
+
+
+</script>

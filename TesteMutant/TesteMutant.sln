@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30114.105
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TesteMutant", "TesteMutant.csproj", "{6A40578D-EF79-461F-AD75-F4CB4DFB6BCC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TesteMutant.Tests", "..\XUnitTest\TesteMutant.Tests.csproj", "{11BC92BA-D6E5-477B-886D-3DB8BAD47754}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6A40578D-EF79-461F-AD75-F4CB4DFB6BCC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6A40578D-EF79-461F-AD75-F4CB4DFB6BCC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6A40578D-EF79-461F-AD75-F4CB4DFB6BCC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6A40578D-EF79-461F-AD75-F4CB4DFB6BCC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{11BC92BA-D6E5-477B-886D-3DB8BAD47754}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{11BC92BA-D6E5-477B-886D-3DB8BAD47754}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{11BC92BA-D6E5-477B-886D-3DB8BAD47754}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{11BC92BA-D6E5-477B-886D-3DB8BAD47754}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {206E7D8C-175D-4028-9486-FBE8B93F921E}
+	EndGlobalSection
+EndGlobal
